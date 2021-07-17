@@ -1,0 +1,45 @@
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="mystyles.css" type="text/css">
+    </head>
+    <title></title>
+sarsarsar
+    
+    
+    
+    <body>
+        
+        <div class="container">
+        <a href="#" class="button" id="button">Login</a>
+        <a href="#" class="button" id="button">Register</a>
+        
+        </div>
+        
+        <div class="popup">
+            <div class="popup-content">
+                <img src="Shoes/close.png" alt="close" class="close">
+                <img src="Shoes/user.png" alt="user">
+                <input type="text" plalceholder="Username">
+                <input type="password" placeholder="Password">
+                <a href="#" class="button">Login</a>
+            </div>
+        </div>
+           
+
+        
+        <script>
+        document.getElementById("button").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "flex";
+        })
+            
+        document.querySelector(".close").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "none";
+        })      
+        
+        </script>
+        
+        
+        
+    </body>
+</html>

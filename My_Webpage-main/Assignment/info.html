@@ -1,0 +1,180 @@
+
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.2">
+<title> </title>
+<link rel="stylesheet" href="mystyles.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>      
+    
+<body>
+    <!--Logo-->
+    <a href="index.html">
+        <img src="Shoes/HomePage/Logo.jpg" width="180" height="180" alt="avatar" style="border-radius: 50%" border=1px solid></a>
+    <!--Login/Register form-->
+    <div class="container">
+        <a href="#" class="button" id="Login">Login</a>
+        <a href="#" class="button" id="Register">Register</a>
+        
+        </div>
+        <!--popup window for the Login-->
+        <div class="popup">
+            <div class="popup-content">
+                <img src="Shoes/close.png" alt="close" class="close">
+                <img src="Shoes/user.png" alt="user">
+                <input type="text" plalceholder="Username">
+                <input type="password" placeholder="Password">
+                <a href="#" class="button">Login</a>
+            </div>
+        </div>
+        <!--popup window for the Registration-->
+                <div class="popup2">
+            <div class="popup-content2">
+                <img src="Shoes/close.png" alt="close" class="close">
+                <img src="Shoes/user.png" alt="user">
+                <input type="text" plalceholder="Username">
+                <input type="password" placeholder="Password">
+                <input type="repeat-password" placeholder="Repeat-Password">
+                <input type="text" plalceholder="E-mail">
+                <a href="#" class="button">Register</a>
+            </div>
+        </div>
+           
+
+        <!--putting the popup/Login into a Script, to make it popping up at the click-->
+        <script>
+        document.getElementById("Login").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "flex";
+        })
+            
+        document.querySelector(".close").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "none";
+        })      
+        
+        </script>
+        
+        <!--putting the popup/Register into a Script, to make it popping up at the click-->
+        <script>
+        document.getElementById("Register").addEventListener("click", function(){
+            document.querySelector(".popup2").style.display = "flex";
+        })
+            
+        document.querySelector(".close").addEventListener("click", function(){
+            document.querySelector(".popup2").style.display = "none";
+        })      
+        
+        </script>
+   <!--Navigation Bar and listing items-->
+    <nav>
+    <ul>
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="NewArrival.html"> New Arrival </a></li>
+        <li><a href="WomanShoes.html"> Women</a></li>  
+        <li><a href="ManShoes.html"> Men </a></li>
+        <li><a href="KidShoes.html"> kids </a></li>
+        <li><a href="info.html"> About us </a></li>
+        <li><a href="info.html"> Contact </a></li>
+        <li><a href="info.html"> Career </a></li>
+    </ul>
+</nav>
+    <!--About us information-->
+    <div class="info">
+    <h1><b>About us</b></h1>
+        <p>Shoes4All was established in 2014 with a view to expand its unique designs of footwear (Men, Women, and Kids).<br> Quality, style and comfort is our unashamed obsession and we work with a large number of selected partners who share our same passion for shoes.<br>
+        we hope you will enjoy our new Autumn/Winter 2019 collection<br>
+        If you are visiting London then come and see us for a close look up at our new collection.We pride ourselves on our warm and frindly personal service.Our experienced team look forward to welcoming you and assisting you with purchases.
+      <!--location information-->      
+        <h1>Location</h1>
+        <p>123, The Jasmine Court,<br> Oxford street, W9 5JB,<br> London; <br> United Kingdom.<br> Tel. 123-456-7890 <br><br><br> Opening Times are: Monday to Saturday, 9am – 6pm.<br> Thursdays 9am - 7pm.</p>
+    </div>
+    <!--Google Maps-->
+  <div id="googleMap" style="width:50%;height:400px;margin-left: 135px;margin-top: 15px;">
+<!--Google Maps into Script-->
+<script>
+    
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+<!--Google Maps into Script with API key setted up-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOcrtJvDOV5DT_wGLSflOgLtx-V-kvd6A&callback=myMap"></script></div>
+  
+    <!--Shipping Information-->
+            <div class="shipping">
+        <h1>Domestic Shipping Policy</h1>
+    <p>Shipment processing time
+    All orders are processed within 2-3 business days. <b>Orders are not shipped or delivered on weekends or holidays.</b><br>
+    If we are experiencing a high volume of orders, shipments may be delayed by a few  days.<br> Please allow additional days in transit for delivery. If there will be a significant delay in shipment of your
+    order, we will contact you via email or telephone.</p></div>
+    
+    <!--Return Policy-->
+    <div class="return">
+    <h1>Returning In-store Purchases</h1>
+    <p>If you purchased your item in one of our stores you have 28 days from your purchase/date of receipt to return the item to us in store in an unworn, unused condition for an exchange or refund.<br>All refunds will be processed using the original payment method. If you do not have the original credit or debit card, then your refund won't be issued. To receive a full refund or to exchange your items please ensure you do the following:<br><br>
+
+    -Return/exchange within 28 days of receiving your item(s).<br>
+    -Make sure items are clean, unworn and with their tags attached.<br>
+    -Have the original receipt or returns note.<br>
+    <b>We won’t be able to complete your refund if you can’t meet these 3 requirements.</b></p>
+    
+    </div>
+    <!--Carrer information-->
+    <div class="career">
+    <h1>Career</h1>
+        <p>Would you like to work with us?<br>
+        Send you CV to <a href="Shoes4All@recruitment.com"> Shoes4All@recruitment.com</a><br>
+        Hope to hear soon about you! </p>
+    
+    </div>
+    
+    <!--Footer-->
+    
+    <div class="footer">
+    <!--Set up left part of the footer with the usefull links-->
+    <div class="section-info">
+        <ul>
+        <li><a href="info.html"> Information </a></li>
+        <li><a href="info.html"> About us </a></li>
+        <li><a href="info.html"> Shipping </a></li>  
+        <li><a href="info.html"> Return and Exchange </a></li>
+        
+        </ul>
+    </div>
+    <!--Set up right part of the footer with the social media links-->
+    
+    <div class="social">
+        <p>See More</p>
+        
+        <p2>Follow us on:<br/></p2>
+        <a href="http://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="http://www.twitter.com/" class="fa fa-twitter"></a>
+        <a href="http://www.google.com/" class="fa fa-google"></a>
+        <a href="http://www.youtube.com/" class="fa fa-youtube"></a>
+        <a href="http://www.instagram.com/" class="fa fa-instagram"></a>
+    </div>
+
+    <!--Set up right part of the footer with the info about the company-->
+    <div class="contact">
+        <ul>
+        <li><a href="info.html"> Contact us </a></li>
+        <li><a href="info.html"> <a href="tel:123-456-7890">123-456-7890</a> </a></li>
+        <li><a href="#"> <a href="Shoes4All@gmail.com"> Shoes4All@gmail.com</a> </a></li>  
+        <li><a href="info.html"> <a href="123, The Jasmine Court, Oxford street, W9 5JB, London Uk"> 123, The Jasmine Court, Oxford street, W9 5JB, London Uk</a> </a></li>
+        </ul>
+        
+         <!--footer bottom with the Designer Name/Company--> 
+        <div class="footer-bottom">
+            &copy; Designed by | Daniele Monaco | Cannon Tech Ltd
+        </div>
+      </div>
+    </div>
+     <!--END--> 
+    </body>  
+</html>

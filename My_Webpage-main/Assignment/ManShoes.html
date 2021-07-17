@@ -1,0 +1,179 @@
+
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.2">
+<title> </title>
+<link rel="stylesheet" href="mystyles.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>      
+    
+<body>
+                <!--Logo-->
+    <a href="index.html">
+        <img src="Shoes/HomePage/Logo.jpg" width="180" height="180" alt="avatar" style="border-radius: 50%" border=1px solid></a>
+    
+    <!--Login/Register form-->
+   <div class="container">
+        <a href="#" class="button" id="Login">Login</a>
+        <a href="#" class="button" id="Register">Register</a>
+        
+        </div>
+        <!--popup window for the Login-->
+        <div class="popup">
+            <div class="popup-content">
+                <img src="Shoes/close.png" alt="close" class="close">
+                <img src="Shoes/user.png" alt="user">
+                <input type="text" plalceholder="Username">
+                <input type="password" placeholder="Password">
+                <a href="#" class="button">Login</a>
+            </div>
+        </div>
+        <!--popup window for the Registration-->
+                <div class="popup2">
+            <div class="popup-content2">
+                <img src="Shoes/close.png" alt="close" class="close">
+                <img src="Shoes/user.png" alt="user">
+                <input type="text" plalceholder="Username">
+                <input type="password" placeholder="Password">
+                <input type="repeat-password" placeholder="Repeat-Password">
+                <input type="text" plalceholder="E-mail">
+                <a href="#" class="button">Register</a>
+            </div>
+        </div>
+           
+    <!--putting the popup/Login into a Script, to make it popping up at the click-->
+    
+        <script>
+        document.getElementById("Login").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "flex";
+        })
+            
+        document.querySelector(".close").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "none";
+        })      
+        
+        </script>
+        
+        <!--putting the popup/Register into a Script, to make it popping up at the click-->
+                <script>
+        document.getElementById("Register").addEventListener("click", function(){
+            document.querySelector(".popup2").style.display = "flex";
+        })
+            
+        document.querySelector(".close").addEventListener("click", function(){
+            document.querySelector(".popup2").style.display = "none";
+        })      
+        
+        </script>
+    
+    <!--Navigation Bar and listing items-->
+    <nav>
+    <ul>
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="NewArrival.html"> New Arrival </a></li>
+        <li><a href="WomanShoes.html"> Women</a></li>  
+        <li><a href="ManShoes.html"> Men </a></li>
+        <li><a href="KidShoes.html"> kids </a></li>
+        <li><a href="info.html"> About us </a></li>
+        <li><a href="info.html"> Contact </a></li>
+        <li><a href="info.html"> Career </a></li>
+    </ul>
+</nav>
+    
+    <!--First row of Man's Shoes gallery with Price list-->
+    
+ <div class="shoes-gallery"> 
+<div section="shoes">
+    <div class="row">
+  <div class="column">
+    <img src="Shoes/Man/shoes1.jpg" style="width:250" height="250">
+      <p1><b>£75</b></p1>
+  </div>
+  <div class="column">
+    <img src="Shoes/Man/shoes4.jpg" style="width:250" height="250">
+      <p1><b>£130</b></p1>
+  </div>
+  <div class="column">
+    <img src="Shoes/Man/shoes5.jpg" style="width:250" height="250">
+      <p1><b>£150</b></p1>
+  </div>
+  <div class="column">
+    <img src="Shoes/man/shoes6.jpg" style="width:250" height="250">
+      <p1><b>£129.99</b></p1>
+    </div>
+  </div> 
+    
+    <!--Second row of Man's Shoes gallery with Price list-->
+    <div class="row">
+  <div class="column">
+    <img src="Shoes/Man/shoes2.jpg" style="width:250" height="250">
+      <p1><b>£60</b></p1>
+  </div>
+  <div class="column">
+    <img src="Shoes/Man/shoes3.jpg" style="width:250" height="250">
+      <p1><b>£95</b></p1>
+  </div>
+  <div class="column">
+    <img src="Shoes/Man/1.jpg" style="width:250" height="250">
+      <p1><b>£130</b></p1>
+  </div>
+  <div class="column">
+    <img src="Shoes/man/3.jpg" style="width:250" height="250">
+      <p1><b>£120</b></p1>
+    </div>
+  </div> 
+    </div>  
+     </div>
+    
+    <!--Footer-->
+    <div class="footer">
+    <!--Set up left part of the footer with the usefull links-->
+    <div class="section-info">
+        <ul>
+        <li><a href="info.html"> Information </a></li>
+        <li><a href="info.html"> About us </a></li>
+        <li><a href="info.html"> Shipping </a></li>  
+        <li><a href="info.html"> Return and Exchange </a></li>
+        
+        </ul>
+    </div>
+    
+    <!--Set up right part of the footer with the social media links-->
+    <div class="social">
+        <p>See More</p>
+        
+        <p2>Follow us on:<br/></p2>
+        <a href="http://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="http://www.twitter.com/" class="fa fa-twitter"></a>
+        <a href="http://www.google.com/" class="fa fa-google"></a>
+        <a href="http://www.youtube.com/" class="fa fa-youtube"></a>
+        <a href="http://www.instagram.com/" class="fa fa-instagram"></a>
+    </div>
+
+    <!--Set up right part of the footer with the info about the company-->
+    <div class="contact">
+        <ul>
+        <li><a href="info.html"> Contact us </a></li>
+        <li><a href="#"> <a href="tel:123-456-7890">123-456-7890</a> </a></li>
+        <li><a href="#"> <a href="Shoes4All@gmail.com"> Shoes4All@gmail.com</a> </a></li>  
+        <li><a href="info.html"> <a href="123, The Jasmine Court, Oxford street, W9 5JB, London Uk"> 123, The Jasmine Court, Oxford street, W9 5JB, London Uk</a> </a></li>
+        </ul>
+        
+        <!--footer bottom with the Designer Name/Company-->
+        <div class="footer-bottom">
+            &copy; Designed by | Daniele Monaco | Cannon Tech Ltd
+        </div>
+      </div>
+    </div>
+    
+    
+    
+   <!--END--> 
+
+
+</body>
+    
+</html>
